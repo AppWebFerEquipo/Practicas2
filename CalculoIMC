@@ -1,0 +1,19 @@
+void main() {
+  
+  final PesoenKg = 85; //usted le cambia
+  final AlturaenMetro = 1.77; //le cambia ej 1.80
+ 
+  double imc = PesoenKg / (AlturaenMetro * AlturaenMetro);
+ 
+  print('Tu IMC es ' + imc.toStringAsFixed(2));
+ 
+  if (imc < 18.5) {
+    print('Peso inferior al normal ');
+  } else if (imc > 18.5 && imc <= 24.9) {
+    print('Normal');
+  } else if (imc >= 25 && imc <= 29.9) {
+    print('Peso superior al normal ');
+  } else if (imc > 30) {
+    print('Obesidad');
+  }
+}
