@@ -1,0 +1,41 @@
+void main() {
+  final salarioHora = 120;
+  final salarioExtra = 175;
+
+  var salarioSemanal;
+
+  print('Semana 1');
+
+  final horasTrabajadasPrimeraSemana = 27; //usted modifica las horas trabajadas
+
+  if (horasTrabajadasPrimeraSemana <= 27) {
+    print(
+        'Se le levanta un acta por pocas horas con un total de $horasTrabajadasPrimeraSemana horas');
+  }
+  if (horasTrabajadasPrimeraSemana > 40) {
+    salarioSemanal = 40 * salarioHora;
+    salarioSemanal += (horasTrabajadasPrimeraSemana - 40) * salarioExtra;
+  } else {
+    salarioSemanal = horasTrabajadasPrimeraSemana * salarioHora;
+  }
+
+  print('El salario semanal es de $salarioSemanal');
+
+  print('----');
+  print('Semana 2');
+
+  final horasTrabajadasSegundaSemana = 15; //usted modifica las horas trabajadas
+
+  if (horasTrabajadasSegundaSemana <= 27) {
+    print(
+        'Es su segunda acta administrativa, usted esta dado de baja de la empresa solamente trabajo un total de $horasTrabajadasSegundaSemana horas');
+  }
+  if (horasTrabajadasSegundaSemana > 40) {
+    salarioSemanal = 40 * salarioHora;
+    salarioSemanal += (horasTrabajadasSegundaSemana - 40) * salarioExtra;
+  } else {
+    salarioSemanal = horasTrabajadasSegundaSemana * salarioHora;
+  }
+
+  print('El salario semanal es de $salarioSemanal');
+}
