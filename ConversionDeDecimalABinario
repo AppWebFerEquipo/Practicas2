@@ -1,0 +1,17 @@
+void main() {
+  int valorDecimal = 36; //valor decimal
+
+  int valorBinario = 0;
+
+  int i = 1;
+
+  while (valorDecimal > 0) {
+    valorBinario = valorBinario + (valorDecimal % 2) * i;
+
+    valorDecimal = (valorDecimal / 2).floor();
+
+    i = i * 10;
+  }
+
+  print("El valor convertido a binario es $valorBinario");
+}
